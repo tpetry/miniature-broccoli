@@ -30,8 +30,8 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
-          extensions: fileinfo, pdo, xdebug
-          coverage: none
+          extensions: fileinfo, pdo
+          coverage: xdebug
 
       - name: Setup problem matchers
         run: |
